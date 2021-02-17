@@ -1,0 +1,99 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #858585;
+    font-size: 16px;
+}
+
+/* UTILITIES */
+
+/* common utilities */
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.w50{
+    width: 50%;
+}
+
+.float-left{
+    float: left;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+header{
+    background-color: #0c325a;
+    font-size: 12px;
+    line-height: 80px;
+}
+
+header .container .logo img{
+    vertical-align: middle;
+    position: relative;
+    bottom: 4px;
+}
+
+.nav-list{
+    display: inline-block;
+}
+
+header .container .nav-list li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+header .container .nav-list li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header .container .logo{
+    width: 15%;
+}
+
+header .container .nav-left{
+    width: 45%;
+}
+
+header .container .nav-right{
+    width: 40%;
+    text-align: right;
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 85px;
+    line-height: 1;
+    text-align: center;
+}
+
+.btn.btn-green{
+    border: 1px solid transparent;
+    background-color: #7bbb01;
+}

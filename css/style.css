@@ -110,7 +110,6 @@ header .container .nav-right{
 }
 
 .jumbotron .container .texts{
-    width: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -130,8 +129,8 @@ header .container .nav-right{
 /* BANNER */
 .banner{
     background-color: #d3d3d3;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -143,4 +142,45 @@ header .container .nav-right{
 
 .banner p{
     font-size: 18px;
+}
+
+/* MAIN */
+main{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    float: right;
+    position: relative;
+    left: -50%;
+}
+
+main .container{
+    position: relative;
+    left: 50%;
+}
+
+main .container [class^="col"]{
+    width: 33.3%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+main .container [class^="col"] img{
+    height: 150px;
+    margin-bottom: 18px;
+}
+
+main .container [class^="col"] h2{
+    color: #7bbb01;
+    margin-bottom: 30px;
+}
+
+main .container [class^="col"] p::before{
+    display: block;
+    margin: auto;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #858585;
+    text-align: center;
+    margin-bottom: 20px;
 }

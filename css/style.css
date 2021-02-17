@@ -126,3 +126,21 @@ header .container .nav-right{
     font-size: 14px;
     padding: 20px;
 }
+
+/* BANNER */
+.banner{
+    background-color: #d3d3d3;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+}
+
+.banner h2{
+    color: black;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-size: 18px;
+}

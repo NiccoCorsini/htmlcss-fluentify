@@ -147,34 +147,37 @@ header .container .nav-right{
 /* MAIN WITH CENTERED FLOATED ELEMENTS */
 main{
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 40px;  
+}
+
+main .macrocontainer{
     float: right;
     position: relative;
     left: -50%;
 }
 
-main .container{
+main .macrocontainer .container{
     position: relative;
     left: 50%;
 }
 
-main .container [class^="col"]{
+main .macrocontainer .container [class^="col"]{
     width: 33.3%;
     text-align: center;
     padding: 0 30px;
 }
 
-main .container [class^="col"] img{
+main .macrocontainer .container [class^="col"] img{
     height: 150px;
     margin-bottom: 18px;
 }
 
-main .container [class^="col"] h2{
+main .macrocontainer .container [class^="col"] h2{
     color: #7bbb01;
     margin-bottom: 30px;
 }
 
-main .container [class^="col"] p::before{
+main .macrocontainer .container [class^="col"] p::before{
     display: block;
     margin: auto;
     content: '';
@@ -185,7 +188,7 @@ main .container [class^="col"] p::before{
     margin-bottom: 20px;
 }
 
-main hr{
+main .macrocontainer hr{
     border-top: 1px solid #d3d3d3;
     position: relative;
     left: 50%;
@@ -193,30 +196,62 @@ main hr{
     margin: 40px auto;
 }
 
-main .second-content .firstcol{
+main .macrocontainer .second-content .firstcol{
     text-align: center;
 }
 
-main .second-content .firstcol img{
+main .macrocontainer .second-content .firstcol img{
     width: 70%;
 }
 
-main .second-content .secondcol{
+main .macrocontainer .second-content .secondcol{
     padding: 0 80px;
 }
 
-main .second-content .secondcol h2{
+main .macrocontainer .second-content .secondcol h2{
     color: black;
     font-size: 30px;
     margin-bottom: 18px;
 }
 
-main .second-content .secondcol p{
+main .macrocontainer .second-content .secondcol p{
     margin-bottom: 18px;
 }
 
-main .second-content .secondcol a{
+main .macrocontainer .second-content .secondcol a{
     text-decoration: underline;
     text-transform: none;
     color: dodgerblue;
+}
+
+/* FOOTER */
+footer{
+    line-height: 120px;
+    background-color: #d3d3d3;
+}
+
+footer .firstsec *,
+footer .secondsec *{
+    display: inline-block;    
+}
+
+footer .secondsec{
+    text-align: right;
+}
+
+footer .secondsec *:not(:last-child){
+    margin-right: 20px;
+}
+
+footer .firstsec h2{
+    color: black;
+}
+
+footer .secondsec select{
+    min-width: 150px;
+    border: none;
+    border-bottom: 1px solid #858585;
+    background-color: #d3d3d3;
+    color: #858585;
+    font-size: 16px;
 }

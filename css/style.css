@@ -21,8 +21,6 @@ body{
 }
 
 /* UTILITIES */
-
-/* common utilities */
 .container{
     width: 65%;
     margin: 0 auto;
@@ -275,17 +273,22 @@ a.btn:hover {
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid transparent;
+    box-shadow: none;
 }
 
 a.btn.btn-green:hover {
     z-index: 2;
     color: white;
-    background-color: #abe442;
+    background-color: #89d300;
     border: 1px solid transparent;
 }
 
+a.btn{
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15);
+}
+
 /* BADGE HELP */
-.badge{
+.badge a{
     text-align: center;
     position: fixed;
     bottom: 60px;
@@ -302,4 +305,6 @@ a.btn.btn-green:hover {
 
 a.help:hover {
     color: white;
+    background-color: #89d300;
+    box-shadow: none;
 }

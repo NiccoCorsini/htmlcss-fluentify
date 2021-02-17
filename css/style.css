@@ -288,6 +288,7 @@ a.btn{
 
 /* BADGE HELP */
 .badge a{
+    width: 60px;
     text-align: center;
     position: fixed;
     bottom: 60px;
@@ -300,9 +301,12 @@ a.btn{
     border-bottom-left-radius: 10px;
     background-color: #7bbb01;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 
 a.help:hover {
+    width: 80px;
     color: white;
     background-color: #89d300;
     box-shadow: none;

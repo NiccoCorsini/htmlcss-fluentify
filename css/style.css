@@ -289,7 +289,7 @@ a.btn{
 /* BADGE HELP */
 .badge a{
     width: 60px;
-    text-align: center;
+    text-align: left;
     position: fixed;
     bottom: 60px;
     right: 0;
@@ -306,6 +306,7 @@ a.btn{
 }
 
 a.help:hover {
+    text-align: left;
     width: 80px;
     color: white;
     background-color: #89d300;

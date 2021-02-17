@@ -252,7 +252,7 @@ footer .firstsec h2{
     color: black;
 }
 
-footer .secondsec select{
+footer .secondsec form select{
     cursor: pointer;
     min-width: 150px;
     border: none;

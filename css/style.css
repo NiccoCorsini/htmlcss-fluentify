@@ -302,10 +302,10 @@ a.btn{
     background-color: #7bbb01;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     -webkit-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;   
 }
 
-a.help:hover {
+a.help:hover {   
     text-align: left;
     width: 80px;
     color: white;

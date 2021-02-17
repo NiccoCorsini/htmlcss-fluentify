@@ -144,7 +144,7 @@ header .container .nav-right{
     font-size: 18px;
 }
 
-/* MAIN */
+/* MAIN WITH CENTERED FLOATED ELEMENTS */
 main{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -183,4 +183,40 @@ main .container [class^="col"] p::before{
     background-color: #858585;
     text-align: center;
     margin-bottom: 20px;
+}
+
+main hr{
+    border-top: 1px solid #d3d3d3;
+    position: relative;
+    left: 50%;
+    width: 95%;
+    margin: 40px auto;
+}
+
+main .second-content .firstcol{
+    text-align: center;
+}
+
+main .second-content .firstcol img{
+    width: 70%;
+}
+
+main .second-content .secondcol{
+    padding: 0 80px;
+}
+
+main .second-content .secondcol h2{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+main .second-content .secondcol p{
+    margin-bottom: 18px;
+}
+
+main .second-content .secondcol a{
+    text-decoration: underline;
+    text-transform: none;
+    color: dodgerblue;
 }

@@ -468,6 +468,7 @@ footer .secondsec form select{
     color: #858585;
     border: none;
     border-bottom: 1px solid #858585;
+    border-radius: 0;
     font-size: 16px;
     height: 34px;
     background: url('../img/pointing-triangle.png') no-repeat right #d3d3d3;

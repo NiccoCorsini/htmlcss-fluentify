@@ -253,6 +253,9 @@ footer .firstsec h2{
 }
 
 footer .secondsec form select{
+    outline: none;
+    /* appearance: none;
+    -webkit-appearance: none; */
     cursor: pointer;
     min-width: 150px;
     border: none;
@@ -260,6 +263,7 @@ footer .secondsec form select{
     background-color: #d3d3d3;
     color: #858585;
     font-size: 16px;
+    display: grid;
 }
 
 /* DECORATION */
@@ -287,7 +291,7 @@ a.btn{
 }
 
 /* BADGE HELP */
-.badge a{
+.badge a{    
     width: 60px;
     text-align: left;
     position: fixed;

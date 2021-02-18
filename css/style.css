@@ -26,8 +26,20 @@ body{
     margin: 0 auto;
 }
 
+.w100{
+    width: 100%;
+}
+
 .w50{
     width: 50%;
+}
+
+.w333{
+    width: 33.3%;
+}
+
+.w23{
+    width: 23%;
 }
 
 .float-left{
@@ -46,6 +58,7 @@ a{
     text-transform: uppercase;
     transition: 0.5s;
 }
+
 .btn{
     display: inline-block;
     border: 1px solid white;
@@ -147,40 +160,28 @@ header .container .nav-right{
     font-size: 18px;
 }
 
-/* MAIN WITH CENTERED FLOATED ELEMENTS */
+/* MAIN */
 main{
-    padding-top: 40px;
-    padding-bottom: 40px;  
+    padding-top: 40px;  
 }
 
-main .macrocontainer{
-    float: right;
-    position: relative;
-    left: -50%;
-}
-
-main .macrocontainer .container{
-    position: relative;
-    left: 50%;
-}
-
-main .macrocontainer .container [class^="col"]{
+main .first-content.container [class^="col"]{
     width: 33.3%;
     text-align: center;
     padding: 0 30px;
 }
 
-main .macrocontainer .container [class^="col"] img{
+main .first-content.container [class^="col"] img{
     height: 150px;
     margin-bottom: 18px;
 }
 
-main .macrocontainer .container [class^="col"] h2{
+main .first-content.container [class^="col"] h2{
     color: #7bbb01;
     margin-bottom: 30px;
 }
 
-main .macrocontainer .container [class^="col"] p::before{
+main .first-content.container [class^="col"] p::before{
     display: block;
     margin: auto;
     content: '';
@@ -191,41 +192,195 @@ main .macrocontainer .container [class^="col"] p::before{
     margin-bottom: 20px;
 }
 
-main .macrocontainer hr{
+main hr{
     border-top: 1px solid #d3d3d3;
-    position: relative;
-    left: 50%;
     width: 95%;
     margin: 40px auto;
 }
 
-main .macrocontainer .second-content .firstcol{
+main .second-content{
+    margin-bottom: 15px;
+}
+
+main .second-content .firstcol,
+main .third-content .firstcol{
     text-align: center;
 }
 
-main .macrocontainer .second-content .firstcol img{
+main .second-content .firstcol img,
+main .third-content .firstcol img{
     width: 70%;
 }
 
-main .macrocontainer .second-content .secondcol{
+main .second-content .secondcol,
+main .third-content .secondcol{
     padding: 0 80px;
 }
 
-main .macrocontainer .second-content .secondcol h2{
+main .second-content .secondcol h2,
+main .third-content .secondcol h2,
+main .content4 .w50 h2,{
     color: black;
     font-size: 30px;
     margin-bottom: 18px;
 }
 
-main .macrocontainer .second-content .secondcol p{
+main .content4 .w50 h2 span{
+    color: #7bbb01;
+}
+
+main .second-content .secondcol p,
+main .third-content .secondcol p{
     margin-bottom: 18px;
 }
 
-main .macrocontainer .second-content .secondcol a{
+main .second-content .secondcol a,
+main .content4 .w50 a,
+main .content6 .container [class^="col"] a{
     text-decoration: underline;
     text-transform: none;
     color: dodgerblue;
 }
+
+main .third-content{
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+main .third-content .secondcol .interactions{
+    padding-top: 10px;
+}
+
+main .third-content .secondcol .interactions a:first-child{
+    width: 50%;
+    font-size: 14px;
+    padding: 15px;
+}
+
+main .third-content .secondcol .interactions a:last-child{
+    max-width: 50%;
+    text-transform: none;
+    color: dodgerblue;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+main .content4{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+main .content4 .w50{
+    text-align: center;
+    margin: auto;
+}
+
+main .content4 .w50 img{
+    margin-bottom: 18px;
+}
+
+main .content4 .w50 p:first-of-type{
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+main .content4 .w50 p:last-of-type{
+    margin-bottom: 18px;
+}
+
+/* SECOND HALF MAIN */
+main .content5{
+    background-color: #0c325a;
+    padding-bottom: 80px;
+    padding-top: 100px;
+}
+
+main .content5 .container .w333 h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+main .content5 .container .w333 P{
+    margin-bottom: 35px;
+}
+
+main .content6{
+    margin-top: 95px;
+    margin-bottom: 80px;
+}
+
+main .content6 .container [class^="col"] img{
+    height: 50px;
+    margin-bottom: 18px;
+}
+
+main .content6 .container [class^="col"]{
+    display: inline-block;
+}
+
+main .content6 .container [class^="col"]:not(:last-child){
+    margin-right: 20px;
+}
+
+main .content6 .container{
+    text-align: center;
+}
+
+main .content6 .container h2{
+    margin-bottom: 90px;
+    color: black;
+    font-size: 26px
+}
+
+main .content6 .container [class^="col"] h3{
+    margin-bottom: 18px;
+    color: black;
+    font-size: 20px
+}
+
+main .content6 .container [class^="col"] a{
+    font-size: 14px;
+}
+
+main .content6 .container [class^="col"]{
+    text-align: initial;
+}
+
+main .content6 .container [class^="col"] p::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+main .content6 .container .col1 p::after{
+    background-color: #9bc8ef;
+}
+
+main .content6 .container .col1 a{
+    color: #9bc8ef;
+}
+
+main .content6 .container .col2 p::after{
+    background-color: #f1a51a;
+}
+
+main .content6 .container .col2 a{
+    color: #f1a51a;
+}
+
+main .content6 .container .col3 p::after{
+    background-color: #81b10a;
+}
+
+main .content6 .container .col3 a{
+    color: #81b10a;
+}
+
 
 /* FOOTER */
 footer{

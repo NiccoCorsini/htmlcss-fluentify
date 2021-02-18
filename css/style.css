@@ -40,6 +40,31 @@ body{
     clear: both;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 85px;
+    line-height: 1;
+    text-align: center;
+}
+
+.btn.btn-green{
+    border: 1px solid transparent;
+    background-color: #7bbb01;
+}
+.btn-big{
+    font-size: 14px;
+    padding: 20px;
+}
+
 /* HEADER */
 header{
     z-index: 1;
@@ -64,13 +89,6 @@ header .container .nav-list li{
     vertical-align: middle;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-
 header .container .logo{
     width: 15%;
 }
@@ -82,21 +100,6 @@ header .container .nav-left{
 header .container .nav-right{
     width: 40%;
     text-align: right;
-}
-
-.btn{
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    min-width: 85px;
-    line-height: 1;
-    text-align: center;
-}
-
-.btn.btn-green{
-    border: 1px solid transparent;
-    background-color: #7bbb01;
 }
 
 /* JUMBOTRON */
@@ -124,11 +127,6 @@ header .container .nav-right{
     color: white;
     font-size: 45px;
     margin-bottom: 20px;
-}
-
-.btn-big{
-    font-size: 14px;
-    padding: 20px;
 }
 
 /* BANNER */

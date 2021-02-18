@@ -462,17 +462,18 @@ footer .firstsec h2{
 }
 
 footer .secondsec form select{
-    outline: none;
-    /* appearance: none;
-    -webkit-appearance: none; */
+    width: 150px;
     cursor: pointer;
-    min-width: 150px;
+    outline: none;
+    color: #858585;
     border: none;
     border-bottom: 1px solid #858585;
-    background-color: #d3d3d3;
-    color: #858585;
     font-size: 16px;
-    display: grid;
+    height: 34px;
+    background: url('../img/pointing-triangle.png') no-repeat right #d3d3d3;
+    background-size: 16px;
+    -webkit-appearance: none;
+    background-position-x: 135px;
 }
 
 /* DECORATION */
